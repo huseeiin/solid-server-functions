@@ -7,7 +7,7 @@ const test = (a) => {
   return crypto.randomUUID();
 };
 
-export function Home() {
+function Home() {
   return (
     <>
       <div>Hello World</div>
