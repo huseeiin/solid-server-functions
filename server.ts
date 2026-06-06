@@ -10,7 +10,7 @@ export default new H3().post("/_serverFn/:id", (e) => {
     try {
       const fn = await getServerFnById(id);
 
-      const body = await e.req.json();
+      const body = await e.req.clone().json();
       if (!Array.isArray(body)) return new Response("Invalid body", { status: 400 });
 
       return Response.json(await fn(...body));
