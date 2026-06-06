@@ -3,6 +3,7 @@
     "strict": true,
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
-    "noUnusedLocals": true
+    "noUnusedLocals": true,
+    "lib": ["dom", "esnext"]
   }
 }
